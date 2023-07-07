@@ -1,0 +1,82 @@
+/* Styles for desktop view / large screens*/
+@media (min-width: 1024px) {
+  button.menu {
+    display: none;
+  }
+
+  img.wissenaire {
+    width: 9rem;
+    margin: 0% 5%;
+    float: left;
+  }
+
+  div#navitems {
+    display: block;
+    width: 65%;
+    margin: 2.5% 5%;
+    font-size: 1.5rem;
+    float: right;
+  }
+
+  li.nav-item {
+    margin: 2.25rem 3%;
+  }
+}
+/* Styles for small screens / small-laptops */
+@media (max-width: 1024px) and(min-width:801px) {
+  button.menu {
+    display: none;
+  }
+
+  img.wissenaire {
+    width: 8rem;
+    margin: 0% 3%;
+    float: left;
+  }
+
+  div#navitems {
+    display: block;
+    width: 68%;
+    margin: 2.25rem 4.2%;
+    font-size: 125%;
+    float: right;
+  }
+
+  li.nav-item {
+    margin: 4% 2%;
+  }
+}
+/* Media query for tablets */
+@media (max-width: 800px) {
+  button.menu {
+    display: block;
+  }
+
+  img.wissenaire {
+    width: 6rem;
+    margin: 0% 8%;
+    float: left;
+  }
+
+  div#navitems {
+    width: 100%;
+    font-size: 150%;
+    float: right;
+  }
+
+  ul.navs{
+    flex-direction: column;
+  }
+
+  li.nav-item {
+    text-align: center;
+    margin: 0.2% 2%;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  img.wissenaire{
+    width: 5rem;
+  }
+}

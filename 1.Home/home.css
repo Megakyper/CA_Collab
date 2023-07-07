@@ -1,4 +1,36 @@
+@import url("../fonts/style.css");
+@import url("../responsive.css");
+
 body{
-    background: radial-gradient(#0c0032 55%, #191919 100%);
+    background: radial-gradient(#0c0c32 55%, #191919 100%);
     background-attachment: fixed;
+}
+
+.navitems{
+    float: right;
+}
+
+img{
+    height: auto;
+    float: left;
+}
+
+button.menu{
+    float: right;
+    margin: 2.75rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0ch;
+}
+
+ul.navs{
+    display: flex;
+    list-style: none;
+}
+
+a#navs{
+    background: linear-gradient(#380000,);
+    font-family: "Exo SemiBold Italic";
+    text-decoration: none;
+    color: #ffffff;
 }
