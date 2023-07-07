@@ -1,36 +1,68 @@
 @import url("../fonts/style.css");
 @import url("../responsive.css");
 
-body{
-    background: radial-gradient(#0c0c32 55%, #191919 100%);
-    background-attachment: fixed;
+body {
+  background: radial-gradient(#0c0c32 55%, #191919 100%);
+  background-attachment: fixed;
+  font-family: "Exo SemiBold Italic";
 }
 
-.navitems{
-    float: right;
+nav {
+  position: fixed;
+  display: flex;
 }
 
-img{
-    height: auto;
-    float: left;
+
+img.wissenaire{
+  position: fixed;
+  left: 5%;
+  height: auto;
 }
 
-button.menu{
-    float: right;
-    margin: 2.75rem;
-    color: #ffffff;
-    background-color: transparent;
-    border: 0ch;
+button.menu {
+  position: fixed;
+  right: 5%;
+  margin: 3.5rem 2rem 1rem 3rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0ch;
 }
 
-ul.navs{
-    display: flex;
-    list-style: none;
+ul.navs {
+  display: flex;
+  list-style: none;
 }
 
-a#navs{
-    background: linear-gradient(#380000,);
-    font-family: "Exo SemiBold Italic";
-    text-decoration: none;
-    color: #ffffff;
+a#navs {
+  font-family: "Exo SemiBold Italic";
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.ca {
+  margin-top: 15%;
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  text-align: center;
+}
+
+div.catxt {
+  margin-bottom: 10%;
+  color: #89d2dc;
+}
+
+div.wiss {
+  font-family: "acme";
+  color: #ffb845;
+}
+
+img.caimg {
+  height: auto;
 }

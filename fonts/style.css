@@ -1,7 +1,12 @@
 @font-face {
-    font-family: "Exo SemiBold Italic";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Exo SemiBold Italic"),
-      url("Exo-SemiBoldItalic.woff") format("woff");
-  }
+  font-family: "Exo SemiBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Exo SemiBold Italic"),
+    url("Exo-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "acme";
+  src: url("Acme-Regular.ttf");
+}

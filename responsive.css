@@ -1,36 +1,84 @@
 /* Styles for desktop view / large screens*/
 @media (min-width: 1024px) {
+  /*home*/
+  nav {
+    justify-content: space-around;
+  }
+
   button.menu {
     display: none;
   }
 
   img.wissenaire {
-    width: 9rem;
-    margin: 0% 5%;
-    float: left;
+    width: 10rem;
+  }
+
+  ul.navs{
+    position: fixed;
+    right: 20%;
+    top: 2rem;
+  }
+
+  div.ca{
+    flex-direction: row;
   }
 
   div#navitems {
     display: block;
-    width: 65%;
-    margin: 2.5% 5%;
-    font-size: 1.5rem;
-    float: right;
+    margin: 2.5% 0% 0% 0%;
+    width: 75%;
+    font-size: 2.1vw;
   }
 
   li.nav-item {
-    margin: 2.25rem 3%;
+    margin: 2.25rem 3.5%;
+  }
+
+  div.info {
+    width: 45%;
+    margin: 5% 2.5%;
+  }
+
+  img.caimg {
+    width: 40%;
+    margin: 3% 5%;
+  }
+
+  /*responsibilities*/
+
+  .card {
+    width: 30%;
+    margin: 5% 8% 5% 12%;
+    height: 20rem;
+    max-width: 400px;
+  }
+
+  .card__content {
+    transform: rotateX(-90deg);
+  }
+
+  .card img {
+    width: 60%;
+  }
+
+  .card:hover img {
+    scale: 0.7;
+    opacity: 0.2;
+  }
+
+  p.card__description {
+    margin-top: 5rem;
+    font-size: 1.7rem;
   }
 }
 /* Styles for small screens / small-laptops */
-@media (max-width: 1024px) and(min-width:801px) {
+@media (max-width: 1024px) and (min-width: 801px) {
   button.menu {
     display: none;
   }
 
   img.wissenaire {
     width: 8rem;
-    margin: 0% 3%;
     float: left;
   }
 
@@ -38,33 +86,89 @@
     display: block;
     width: 68%;
     margin: 2.25rem 4.2%;
-    font-size: 125%;
+    font-size: 2vw;
     float: right;
+  }
+  
+  ul.navs{
+    position: fixed;
+    right: 20%;
+    top: 2rem;
   }
 
   li.nav-item {
-    margin: 4% 2%;
+    margin: 4% 3%;
+  }
+
+  div.info {
+    width: 45%;
+    margin: 5% 2.5%;
+  }
+
+  img.caimg {
+    width: 40%;
+    margin: 3% 2%;
+  }
+
+  /*respnsibilities*/
+
+  .card {
+    width: 35%;
+    margin: 3% 5% 3% 10%;
+    height: 18rem;
+  }
+
+  .card__content {
+    transform: rotateX(-90deg);
+  }
+
+  .card img {
+    width: 60%;
+  }
+
+  .card:hover img {
+    scale: 0.7;
+    opacity: 0.2;
+  }
+
+  p.card__description {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
   }
 }
-/* Media query for tablets */
+
+/* Media query for tablets/mobiles */
 @media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+
+  div.small {
+    display: flex;
+    flex-direction: row;
+    flex: 30%;
+  }
+
   button.menu {
+    border-left: 70%;
     display: block;
   }
 
   img.wissenaire {
     width: 6rem;
-    margin: 0% 8%;
     float: left;
   }
 
   div#navitems {
+    position: fixed;
+    background: radial-gradient(#0c0c32 95%, #191919 100%);
+    background-size: 100vw 100vh;
+    top: 12.5%;
     width: 100%;
     font-size: 150%;
-    float: right;
   }
 
-  ul.navs{
+  ul.navs {
     flex-direction: column;
   }
 
@@ -72,11 +176,48 @@
     text-align: center;
     margin: 0.2% 2%;
   }
-}
 
-/* Media query for mobile devices */
-@media (max-width: 480px) {
-  img.wissenaire{
-    width: 5rem;
+  div.ca {
+    flex-direction: column;
+  }
+
+  div.info {
+    width: 90%;
+    margin: 15% 5%;
+  }
+
+  img.caimg {
+    width: 90%;
+    margin: 13% 5%;
+  }
+
+  /*respnsibilities*/
+
+  .row {
+    flex-direction: column;
+    display: grid;
+    justify-items: center;
+  }
+
+  .card {
+    width: 70%;
+    margin: 5% 15vw;
+    height: 23rem;
+    max-width: 300px;
+  }
+
+  .card__content {
+    position: relative;
+    transform: rotateX(0);
+  }
+
+  
+  .card img {
+    width: 40%;
+  }
+
+  p.card__description {
+    font-size: 1.2rem;
+    margin-top: 12.5rem;
   }
 }
