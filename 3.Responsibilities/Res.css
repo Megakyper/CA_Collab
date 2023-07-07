@@ -1,6 +1,107 @@
-@import url("../fonts/style.css");
-
 body{
     background: radial-gradient(#0c0032 55%, #191919 100%);
     background-attachment: fixed;
 }
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   margin-top:70px;
+    margin-left:220px;
+    
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    background-color: radial-gradient(#350259, #000000);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card:img{
+    background-color: radial-gradient(#350259d1, #000000d1);
+  }
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+    
+
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color:#ffb845;
+    font-weight: 700;
+    text-align:center;
+    font-size: 30px;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ffb845;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    font-weight:500;
+  }
+  .row1{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+  .ca{
+    color:#b4cca7;
+    margin-top:20px;
+    align-items: center;
+    margin-left:480px;
+    font-weight:100px;
+    font-size:35px;
+  
+  }
+  .row2{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+    
+  }
+  .bb{
+    color:#b4cca7;
+    text-align: center;
+    font-weight:550;
+    font-size:25px;
+
+  }
