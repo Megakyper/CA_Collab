@@ -66,6 +66,8 @@ body {
 .row {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .ca {
   width: 100%;
