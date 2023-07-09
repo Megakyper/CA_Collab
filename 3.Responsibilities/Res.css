@@ -5,20 +5,84 @@ body {
   background-attachment: fixed;
 }
 
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 180deg;
+}
+
+@property --b {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --c {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
 .card {
   display: flex;
   overflow: hidden;
   position: relative;
-  border-radius: 10px 100px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 20px;
   perspective: 1000px;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(#350259d1, #000000d1);
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  transition: all 500ms;
+  background: #000000;
+  width: 93%;
+  height: 93%;
+  max-width: 400px;
   transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(
+    white 0deg var(--c),
+    black var(--c) var(--b),
+    white var(--b) var(--a),
+    black var(--a) 360deg
+  );
+  border-radius: 20px;
+  animation: change 20s ease infinite;
+}
+
+@keyframes change {
+  0% {
+    --a: 180deg;
+    --b: 0deg;
+    --c: 0deg;
+  }
+  25% {
+    --a: 225deg;
+    --b: 90deg;
+    --c: 0deg;
+  }
+  50% {
+    --a: 360deg;
+    --b: 180deg;
+    --c: 0deg;
+  }
+  75% {
+    --a: 360deg;
+    --b: 270deg;
+    --c: 90deg;
+  }
+  100% {
+    --a: 360deg;
+    --b: 360deg;
+    --c: 180deg;
+  }
 }
 
 .card img {
@@ -64,12 +128,9 @@ body {
   font-family: "Exo SemiBold Italic";
 }
 .row {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
 }
-.ca {
+p.ca {
   width: 100%;
   text-align: center;
   color: #b4cca7;

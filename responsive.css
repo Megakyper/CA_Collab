@@ -13,13 +13,13 @@
     width: 10rem;
   }
 
-  ul.navs{
+  ul.navs {
     position: fixed;
     right: 20%;
     top: 2rem;
   }
 
-  div.ca{
+  div.ca {
     flex-direction: row;
   }
 
@@ -46,11 +46,16 @@
 
   /*responsibilities*/
 
-  .card {
+  
+  .row {
+    display: flex;
+  }
+
+  div.container {
     width: 30%;
     margin: 5% 8% 5% 12%;
-    height: 20rem;
-    max-width: 400px;
+    height: 22rem;
+    max-width: 420px;
   }
 
   .card__content {
@@ -69,6 +74,23 @@
   p.card__description {
     margin-top: 5rem;
     font-size: 1.7rem;
+  }
+
+  /*incentives*/
+  
+  .slider{
+    height: 590px;
+  }
+
+  .item{
+    width: 350px;
+    height: 550px;
+  }
+
+  /*contact*/
+
+  ul.links {
+    width: 60%;
   }
 }
 /* Styles for small screens / small-laptops */
@@ -89,8 +111,8 @@
     font-size: 2vw;
     float: right;
   }
-  
-  ul.navs{
+
+  ul.navs {
     position: fixed;
     right: 20%;
     top: 2rem;
@@ -112,7 +134,11 @@
 
   /*respnsibilities*/
 
-  .card {
+  .row {
+    display: flex;
+  }
+
+  div.container {
     width: 35%;
     margin: 3% 5% 3% 10%;
     height: 18rem;
@@ -134,6 +160,24 @@
   p.card__description {
     font-size: 1.3rem;
     margin-top: 2.5rem;
+  }
+
+  /*incentives*/
+
+  .slider{
+    height: 540px;
+  }
+
+  .item{
+    width: 325px;
+    height: 500px;
+  }
+
+  
+  /*contact*/
+
+  ul.links {
+    width: 60%;
   }
 }
 
@@ -194,15 +238,14 @@
   /*respnsibilities*/
 
   .row {
-    flex-direction: column;
     display: grid;
     justify-items: center;
   }
 
-  .card {
+  div.container {
     width: 70%;
     margin: 5% 15vw;
-    height: 23rem;
+    height: 25rem;
     max-width: 300px;
   }
 
@@ -211,7 +254,6 @@
     transform: rotateX(0);
   }
 
-  
   .card img {
     width: 40%;
   }
@@ -219,5 +261,22 @@
   p.card__description {
     font-size: 1.2rem;
     margin-top: 12.5rem;
+  }
+  
+  /*incentives*/
+
+  .slider{
+    height: 500px;
+  }
+
+  .item{
+    width: 300px;
+    height: 460px;
+  }
+
+  /*contact*/
+
+  ul.links {
+    width: 100%;
   }
 }
