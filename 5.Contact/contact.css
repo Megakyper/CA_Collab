@@ -56,12 +56,13 @@ ul.links {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-bottom: 50px;
 }
 
 li.link {
-  width: 56px;
-  height: 56px;
-  margin:0px 10% 0px 0px;
+  width: 40px;
+  height: 40px;
+  margin:0px 6% 0px 0px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -83,22 +84,22 @@ a.link{
 
 span.fa-facebook {
   color: rgb(40, 85, 182);
-  font-size: 50px;
+  font-size: 30px;
 }
 
 span.fa-linkedin-in {
   color: rgb(30, 48, 80);
-  font-size: 50px;
+  font-size: 30px;
 }
 
 span.fa-twitter {
   color: rgb(0, 172, 238);
-  font-size: 50px;
+  font-size: 30px;
 }
 
 span.fa-instagram {
   color: rgb(195, 11, 85);
-  font-size: 50px;
+  font-size: 30px;
 }
 
 li.link:hover{

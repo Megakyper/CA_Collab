@@ -14,7 +14,7 @@ body {
 
 .heading h1 {
   color: white;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   font-size: xx-large;
   background: transparent;
@@ -68,7 +68,6 @@ body {
   font-weight: bolder;
   color: #380000;
   font-family: "acme";
-  letter-spacing: 1px;
 }
 
 #next,
