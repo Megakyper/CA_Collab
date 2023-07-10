@@ -1,3 +1,7 @@
+::selection{
+  color: coral;
+}
+
 /* Styles for desktop view / large screens*/
 @media (min-width: 1024px) {
   /*home*/
@@ -249,7 +253,7 @@
     height: 25rem;
     max-width: 300px;
   }
-
+  
   .card__content {
     position: relative;
     transform: rotateX(0);

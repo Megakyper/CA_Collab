@@ -68,6 +68,7 @@ body {
   font-weight: bolder;
   color: #380000;
   font-family: "acme";
+  letter-spacing: 1px;
 }
 
 #next,
