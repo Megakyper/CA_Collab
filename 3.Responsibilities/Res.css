@@ -54,7 +54,7 @@ div.container {
   border-radius: 20px;
   animation: change 15s ease infinite;
   animation:  threed 10s linear infinite;
-  transition: all 1s linear;
+  transition: --c 0.4s linear ,all 1s linear;
 }
 
 .container:nth-child(even){
@@ -93,7 +93,8 @@ animation-delay:-5s ;
 }
 
 .container:hover {
-  animation: none;
+  animation-play-state: paused;
+  --c:0deg;
   background: white;
 }
 
