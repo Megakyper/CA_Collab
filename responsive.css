@@ -46,12 +46,12 @@
 
   /*responsibilities*/
 
-  
   .row {
     display: flex;
   }
 
   div.container {
+    --c: 15deg;
     width: 30%;
     margin: 5% 8% 5% 12%;
     height: 22rem;
@@ -77,12 +77,12 @@
   }
 
   /*incentives*/
-  
-  .slider{
+
+  .slider {
     height: 590px;
   }
 
-  .item{
+  .item {
     width: 350px;
     height: 550px;
   }
@@ -139,6 +139,7 @@
   }
 
   div.container {
+    --c: 10deg;
     width: 35%;
     margin: 3% 5% 3% 10%;
     height: 18rem;
@@ -164,16 +165,15 @@
 
   /*incentives*/
 
-  .slider{
+  .slider {
     height: 540px;
   }
 
-  .item{
+  .item {
     width: 325px;
     height: 500px;
   }
 
-  
   /*contact*/
 
   ul.links {
@@ -243,6 +243,7 @@
   }
 
   div.container {
+    --c: 10deg;
     width: 70%;
     margin: 5% 15vw;
     height: 25rem;
@@ -262,14 +263,14 @@
     font-size: 1.2rem;
     margin-top: 12.5rem;
   }
-  
+
   /*incentives*/
 
-  .slider{
+  .slider {
     height: 500px;
   }
 
-  .item{
+  .item {
     width: 300px;
     height: 460px;
   }

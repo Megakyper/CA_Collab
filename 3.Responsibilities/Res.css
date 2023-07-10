@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;
 }
 
-
 @property --a {
   syntax: "<angle>";
   inherits: false;
@@ -37,8 +36,8 @@ body {
   align-items: center;
   justify-content: center;
   background: #000000;
-  width: 93%;
-  height: 93%;
+  width: 95%;
+  height: 95%;
   max-width: 400px;
   transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -48,41 +47,54 @@ div.container {
   justify-content: center;
   align-items: center;
   background: conic-gradient(
-    white 0deg var(--c),
-    black var(--c) var(--b),
-    white var(--b) var(--a),
-    black var(--a) 360deg
+    from var(--b),
+    white 0deg var(--a),
+    black 180deg 360deg
   );
   border-radius: 20px;
-  animation: change 20s ease infinite;
+  animation: change 15s ease infinite;
+  animation:  threed 10s linear infinite;
+  transition: all 1s linear;
 }
 
-@keyframes change {
-  0% {
-    --a: 180deg;
-    --b: 0deg;
-    --c: 0deg;
+.container:nth-child(even){
+animation-delay:-5s ;
+}
+
+@keyframes threed {
+  0%,
+  100% {
+    transform: perspective(750px) rotate3d(1, 1, 0, var(--c));
+  }
+  12.5% {
+    transform: perspective(750px) rotate3d(0, 1, 0, var(--c));
   }
   25% {
-    --a: 225deg;
-    --b: 90deg;
-    --c: 0deg;
+    transform: perspective(750px) rotate3d(-1, 1, 0, var(--c));
+  }
+  37.5% {
+    transform: perspective(750px) rotate3d(-1, 0, 0, var(--c));
   }
   50% {
-    --a: 360deg;
-    --b: 180deg;
-    --c: 0deg;
+    transform: perspective(750px) rotate3d(-1, -1, 0, var(--c));
+  }
+  62.5% {
+    transform: perspective(750px) rotate3d(0, -1, 0, var(--c));
   }
   75% {
-    --a: 360deg;
-    --b: 270deg;
-    --c: 90deg;
+    transform: perspective(750px) rotate3d(1, -1, 0, var(--c));
+  }
+  87.5% {
+    transform: perspective(750px) rotate3d(1, 0, 0, var(--c));
   }
   100% {
-    --a: 360deg;
-    --b: 360deg;
-    --c: 180deg;
+    --b: -360deg;
   }
+}
+
+.container:hover {
+  animation: none;
+  background: white;
 }
 
 .card img {
