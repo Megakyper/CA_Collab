@@ -1,7 +1,6 @@
-::selection{
+::selection {
   color: coral;
 }
-
 
 /* Styles for desktop view / large screens*/
 @media (min-width: 1024px) {
@@ -21,7 +20,6 @@
   ul.navs {
     position: fixed;
     right: 18%;
-    
   }
 
   div.ca {
@@ -49,8 +47,6 @@
     width: 50%;
     margin: 3% 5%;
   }
-
- 
 
   /*responsibilities*/
 
@@ -87,7 +83,7 @@
   /*incentives*/
 
   .slider {
-    height: 590px;
+    height: 500px;
   }
 
   .item {
@@ -99,6 +95,16 @@
 
   ul.links {
     width: 60%;
+  }
+
+  /*contact_form*/
+
+  fieldset {
+    width: 550px;
+  }
+
+  .inputBox {
+    margin: 0.5px;
   }
 }
 /* Styles for small screens / small-laptops */
@@ -141,7 +147,6 @@
     margin: 3% 2%;
   }
 
-
   /*responsibilities*/
 
   .row {
@@ -176,7 +181,7 @@
   /*incentives*/
 
   .slider {
-    height: 540px;
+    height: 500px;
   }
 
   .item {
@@ -188,6 +193,16 @@
 
   ul.links {
     width: 60%;
+  }
+
+  /*contact_form*/
+
+  fieldset {
+    width: 550px;
+  }
+
+  .inputBox {
+    margin: 0.5px;
   }
 }
 
@@ -204,7 +219,6 @@
     justify-content: space-between;
   }
 
-
   button.menu {
     border-left: 70%;
     display: block;
@@ -219,9 +233,14 @@
     position: fixed;
     background: radial-gradient(#0c0c32 75%, #191919 100%);
     background-size: 99vw 220vh;
-    top: 6rem;
+    top: 5.5rem;
     width: 100%;
     font-size: 25px;
+  }
+
+  .remove {
+    transform: translateY(-125px) scaleY(0);
+    opacity: 0;
   }
 
   ul.navs {
@@ -247,9 +266,6 @@
     width: 80%;
     margin: 15% 12.5%;
   }
-
-  
-  
 
   /*respnsibilities*/
 
@@ -283,7 +299,7 @@
   /*incentives*/
 
   .slider {
-    height: 500px;
+    height: 450px;
   }
 
   .item {
@@ -297,7 +313,7 @@
     width: 100%;
   }*/
 
-  .icon--instagram{
+  .icon--instagram {
     background-image: radial-gradient(
       circle at 30% 107%,
       #fdf497 0%,
@@ -308,20 +324,30 @@
     );
     border-color: #a02d76;
   }
-  
-  .icon--twitter{
+
+  .icon--twitter {
     background-color: #1da1f2;
     border-color: #1da1f2;
   }
-  
-  .icon--linkedin{
+
+  .icon--linkedin {
     background-color: #0077b5;
     border-color: #0077b5;
   }
-  
-  .icon--facebook{
+
+  .icon--facebook {
     background-color: rgb(40, 85, 182);
     border-color: rgb(40, 85, 182);
   }
-  
+
+  /*contact_form*/
+
+  fieldset {
+    width: 80%;
+    max-width: 550px;
+  }
+
+  .inputBox {
+    margin: 1vh 0px;
+  }
 }

@@ -9,7 +9,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link 
+    <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
@@ -17,7 +17,6 @@
     <title>CAMPUS_AMBASSODOR</title>
     <link rel="icon" href="../images/wiss_logo_square.png" />
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
     <!--HOME-->
@@ -42,31 +41,29 @@
       </div>
       <div class="navitems collapse" id="navitems">
         <ul class="navs">
-          <li class="nav-item"><a href="#" id="navs">Home</a></li>
-          <li class="nav-item"><a href="#About" id="navs"> About</a></li>
+          <li class="nav-item"><a href="#" class="navs">Home</a></li>
+          <li class="nav-item"><a href="#About" class="navs"> About</a></li>
           <li class="nav-item">
-            <a href="#res" id="navs">Responsibilities</a>
+            <a href="#res" class="navs">Responsibilities</a>
           </li>
           <li class="nav-item">
-            <a href="#incentives" id="navs">Incentives</a>
+            <a href="#incentives" class="navs">Incentives</a>
           </li>
-          <li class="nav-item"><a href="#contact" id="navs">Contact</a></li>
+          <li class="nav-item"><a href="#contact" class="navs">Contact</a></li>
         </ul>
       </div>
     </nav>
     <section class="home">
-        
-          <div class="ca">
-            <div class="info">
-              <div class="catxt">CAMPUS <br />AMBASSODOR</div>
-              <div class="wiss">WISSENAIRE</div>
-              <button class="signup">
-                <a href="#" id="signup"> sign up</a>
-              </button>
-            </div>
-            <img src="../images/ca_wiss.png" alt="CA" class="caimg"  />
-          </div>
-
+      <div class="ca">
+        <div class="info">
+          <div class="catxt">CAMPUS <br />AMBASSODOR</div>
+          <div class="wiss">WISSENAIRE</div>
+          <button class="signup">
+            <a href="#" id="signup"> sign up</a>
+          </button>
+        </div>
+        <img src="../images/ca_wiss.png" alt="CA" class="caimg" />
+      </div>
     </section>
     <!--ABOUT-->
     <section id="About">
@@ -91,8 +88,11 @@
       </div>
     </section>
     <!--RESPONSIBILITIES-->
-    <section id="res">
-      <p class="ca"><b>What will you do as a CA?</b></p>
+    <span class="heading" id="res"></span>
+    <section>
+      <p class="ca">
+        <b> What will you do as a CA?</b>
+      </p>
       <p class="bb">
         The Campus Ambassador's <br />day-to-day life responsibilities include:
       </p>
@@ -152,87 +152,92 @@
       </div>
     </section>
     <!--INCENTIVES-->
+    <span class="heading" id="incentives"></span>
     <section id="incentives">
-        <div class="incen-content">
-          <div class="heading">
-            <h1>Rewards and Incentives</h1>
-          </div>
-          <div class="incen-caro">
-            <div class="slider">
-              <div class="item">
-                <img src="../images/coupons.jpg" />
-                <div
-                  class="item-name"
-                  style="
-                    background-color: white;
-                    width: fit-content;
-                    height: fit-content;
-                    padding: 0;
-                  "
-                >
-                  <h2>Coupons</h2>
-                </div>
+      <div class="incen-content">
+        <div class="heading">
+          <h1>Rewards and Incentives</h1>
+        </div>
+        <div class="incen-caro">
+          <div class="slider">
+            <div class="item">
+              <img src="../images/coupons.jpg" />
+              <div
+                class="item-name"
+                style="
+                  background-color: white;
+                  width: fit-content;
+                  height: fit-content;
+                  padding: 0;
+                "
+              >
+                <h2>Coupons</h2>
               </div>
-              <div class="item">
-                <img src="../images/campus.jpg" />
-                <div class="item-name">
-                  <h2>Chance to visit Campus</h2>
-                </div>
-              </div>
-              <div class="item">
-                <img src="../images/starnite.jpg" />
-                <div class="item-name">
-                  <h2 style="color: aliceblue">Free Starnite passes</h2>
-                </div>
-              </div>
-              <div class="item">
-                <img src="../images/free_participation.jpg" />
-                <div class="item-name">
-                  <h2 style="color: aliceblue">Free participation in Events</h2>
-                </div>
-              </div>
-              <div class="item">
-                <img src="../images/goodies.png" />
-                <div class="item-name">
-                  <h2 style="color: rgb(0, 0, 0)">Goodies</h2>
-                </div>
-              </div>
-              <div class="item">
-                <img src="../images/certified.jpg" />
-                <div class="item-name">
-                  <h2 style="color: rgb(0, 0, 0)">Get Certified</h2>
-                </div>
-              </div>
-              <button id="next">
-                <div class="tril"></div>
-              </button>
-              <button id="prev">
-                <div class="trir"></div>
-              </button>
             </div>
+            <div class="item">
+              <img src="../images/campus.jpg" />
+              <div class="item-name">
+                <h2>Chance to visit Campus</h2>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../images/starnite.jpg" />
+              <div class="item-name">
+                <h2 style="color: aliceblue">Free Starnite passes</h2>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../images/free_participation.jpg" />
+              <div class="item-name">
+                <h2 style="color: aliceblue">Free participation in Events</h2>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../images/goodies.png" />
+              <div class="item-name">
+                <h2 style="color: rgb(0, 0, 0)">Goodies</h2>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../images/certified.jpg" />
+              <div class="item-name">
+                <h2 style="color: rgb(0, 0, 0)">Get Certified</h2>
+              </div>
+            </div>
+            <button id="next">
+              <div class="tril"></div>
+            </button>
+            <button id="prev">
+              <div class="trir"></div>
+            </button>
           </div>
         </div>
-      </section>
-      <!--CONTACT-->
-      <section class="carrier" id="contact">
-        <div class="headings" >
-          FOR MORE INFORMATION CONTACT
+      </div>
+      <div
+        class="information"
+        style="word-spacing: 10px; margin-top: 0px; margin-bottom: 40px"
+      >
+        for further info <a href="#" target="_blank">click here</a>
+      </div>
+    </section>
+    <!--CONTACT-->
+    <section class="carrier" id="contact">
+      <div class="headings">FOR MORE INFORMATION CONTACT</div>
+      <div class="information">
+        Rushikesh - 9652902533<br />Chandrahas - 7416527870
+      </div>
+      <div id="links">
+        <div class="headings" id="heading">
+          for further information visit our website <br /><a
+            href="https://www.wissenaire.org/"
+            target="_blank"
+            id="wissenaire_web"
+            >Wissenaire.org
+            <div class="triangle"></div
+          ></a>
+          Follow us on
         </div>
-        <div class="information" >
-          Rushikesh - 9652902533<br>Chandrahas - 7416527870
-        </div>
-        <div id="links">
-          <div class="headings" id="heading">
-            for further information visit our website <br /><a
-              href="https://www.wissenaire.org/"
-              target="_blank"
-              id="wissenaire_web"
-              >Wissenaire.org
-            <div class="triangle"></div></a
-            >
-            Follow us on
-          </div>
-          <!--
+        <!--
           <ul class="links">
             <li class="link">
               <a class="link" href="https://www.facebook.com/wissenaireiitbbs/" target="_blank">
@@ -262,23 +267,41 @@
             </li class="link">
           </ul>
         -->
-          <div class="sc-icons">
-              <a class="icon icon--facebook" href="https://www.facebook.com/wissenaireiitbbs/" target="_blank">
-                <i class="ri-facebook-line"></i>
-              </a>
-              <a class="icon icon--twitter" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fwissiitbbs" target="_blank">
-                <i class="ri-twitter-line"></i>
-              </a>
-              <a class="icon icon--instagram" href="https://www.instagram.com/wissenaire.iitbbs/" target="_blank">
-                <i class="ri-instagram-line"></i>
-              </a>
-              <a class="icon icon--linkedin" href="https://www.linkedin.com/company/wissenaire-iit-bhubaneswar/" target="_blank">
-                <i class="ri-linkedin-line"></i>
-              </a>
-          </div>
-          <h6 style="color: aliceblue; margin-bottom: 2rem;">© 2023 All Rights Reserved By Wissenaire</h6>
+        <div class="sc-icons">
+          <a
+            class="icon icon--facebook"
+            href="https://www.facebook.com/wissenaireiitbbs/"
+            target="_blank"
+          >
+            <i class="ri-facebook-line"></i>
+          </a>
+          <a
+            class="icon icon--twitter"
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fwissiitbbs"
+            target="_blank"
+          >
+            <i class="ri-twitter-line"></i>
+          </a>
+          <a
+            class="icon icon--instagram"
+            href="https://www.instagram.com/wissenaire.iitbbs/"
+            target="_blank"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a
+            class="icon icon--linkedin"
+            href="https://www.linkedin.com/company/wissenaire-iit-bhubaneswar/"
+            target="_blank"
+          >
+            <i class="ri-linkedin-line"></i>
+          </a>
         </div>
-      </section>
+        <h6 style="color: aliceblue; margin-bottom: 2rem">
+          © 2023 All Rights Reserved By Wissenaire
+        </h6>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

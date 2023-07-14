@@ -3,6 +3,14 @@
 
 /*properties*/
 
+
+span.heading{
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translateY(-6rem);
+}
+
 @property --a {
   syntax: "<percentage>";
   inherits: false;
@@ -21,12 +29,11 @@
   initial-value: 0deg;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /*HOME*/
 
@@ -47,12 +54,10 @@ nav {
   background-size: 100vw 100vh;
 }
 
-
 img.wissenaire {
   position: relative;
-  
+
   height: 6rem;
-  
 }
 
 button {
@@ -60,11 +65,16 @@ button {
 }
 
 button.menu {
-  
   right: 5%;
   margin: 3.5rem 2rem 1rem 3rem;
   color: #ffffff;
   background-color: transparent;
+  transition:all 0.3s;
+}
+
+.zero{
+  opacity: 0;
+  transform: translateX(50px);
 }
 
 ul.navs {
@@ -73,11 +83,15 @@ ul.navs {
   mix-blend-mode: lighten;
 }
 
+.navitems{
+  transition: .3s;
+}
+
 a {
   text-decoration: none;
 }
 
-a#navs {
+a.navs {
   font-family: "Exo SemiBold Italic";
   color: #ffffff;
   text-shadow: 8px 6px 6px #00a5a590;
@@ -113,16 +127,14 @@ div.wiss {
 img.caimg {
   height: fit-content;
   filter: drop-shadow(-5px 5px 5px #00ffe175);
-  
 }
 
-.home{
+.home {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
-
 
 button.signup {
   background: linear-gradient(
@@ -166,9 +178,7 @@ button.signup:hover {
 }
 .container2 {
   width: 100%;
-
   padding: 150px 15vw;
-
   align-items: center;
 }
 
@@ -195,7 +205,7 @@ button.signup:hover {
 
 .card-inner h1 {
   margin-bottom: 10px;
-  font-family: "Exo SemiBold Italic";
+  font-family: "acme";
   z-index: 2;
   color: #02f4d3;
   font-size: 3rem;
@@ -203,12 +213,10 @@ button.signup:hover {
 
 .card-inner p {
   font-size: large;
-  letter-spacing: 0px;
+  font-family: "Exo SemiBold Italic";
   font-weight: 500;
-  color: rgba(253, 253, 253, 0.808);
+  color: rgba(253, 253, 253, 1);
   font-size: 1.3rem;
-  font-family: "acme";
-  word-spacing: 5px;
   letter-spacing: 0.5px;
 }
 
@@ -323,6 +331,7 @@ div.container {
 .card img {
   fill: #333;
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 50;
 }
 
 .card :hover {
@@ -346,7 +355,6 @@ div.container {
 
 .card__title {
   margin: 0;
-  margin-bottom: 2.25rem;
   font-size: 24px;
   color: #ffb845;
   font-weight: 700;
@@ -366,10 +374,12 @@ div.container {
   width: 100%;
 }
 p.ca {
-  width: 100%;
+  width: 80%;
+  margin: 5% 10%;
   text-align: center;
   color: #b4cca7;
   align-items: center;
+
   font-weight: 500;
   font-size: 3rem;
   font-family: "acme";
@@ -448,7 +458,6 @@ p.ca {
   font-weight: bold;
   color: #380000;
   font-family: "acme";
-  
 }
 
 #next,
@@ -522,16 +531,15 @@ div.tril {
 }
 
 div#heading {
-  font-size: 1.8rem;
-  
+  font-size: 1.5rem;
 }
 
-a#wissenaire_web{
-    display: flex;
-    justify-content: center;
+a#wissenaire_web {
+  display: flex;
+  justify-content: center;
 }
 
-#links{
+#links {
   align-items: center;
   justify-content: center;
 }
@@ -539,9 +547,9 @@ a#wissenaire_web{
   margin: 0.7rem;
   width: 0;
   height: 0;
-  border-top: 1rem solid transparent;
-  border-bottom: 1rem solid transparent;
-  border-right: 1rem solid rgb(28, 247, 255);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgb(28, 247, 255);
 }
 /*
 ul.links {
@@ -575,7 +583,7 @@ a.link {
   justify-content: center;
 }*/
 
-.sc-icons{
+.sc-icons {
   padding-top: 10px;
   padding-bottom: 20px;
   display: flex;
@@ -584,8 +592,7 @@ a.link {
   justify-content: center;
 }
 
-.icon{
-  
+.icon {
   display: inline-flex;
   width: 40px;
   height: 40px;
@@ -627,19 +634,19 @@ li.link:hover {
 }
 */
 
-.icon:hover{
+.icon:hover {
   outline-offset: 4px;
 }
 
-.icon i{
+.icon i {
   margin: auto;
 }
 
-.icon:hover i{
+.icon:hover i {
   animation: shake 0.25s;
 }
 
-.icon--instagram:hover{
+.icon--instagram:hover {
   background-image: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -651,32 +658,32 @@ li.link:hover {
   outline-color: #a02d76;
 }
 
-.icon--twitter:hover{
+.icon--twitter:hover {
   background-color: #1da1f2;
   outline-color: #1da1f2;
 }
 
-.icon--linkedin:hover{
+.icon--linkedin:hover {
   background-color: #0077b5;
   outline-color: #0077b5;
 }
 
-.icon--facebook:hover{
+.icon--facebook:hover {
   background-color: rgb(40, 85, 182);
   outline-color: rgb(40, 85, 182);
 }
 
-@keyframes shake{
-  10%{
+@keyframes shake {
+  10% {
     transform: rotate(15deg);
   }
-  20%{
+  20% {
     transform: rotate(-15deg);
   }
-  30%{
+  30% {
     transform: rotate(15deg);
   }
-  40%{
+  40% {
     transform: rotate(-15deg);
   }
 }
