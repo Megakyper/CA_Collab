@@ -64,6 +64,7 @@ fieldset {
   pointer-events: none;
   transition: 0.5s;
   top: 5%;
+
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span,
