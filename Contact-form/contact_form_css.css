@@ -1,0 +1,79 @@
+body{
+    color: white;
+    background-image: url(wissBackground1.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.inputBox{
+    position: relative;
+    width: 600px;
+    padding-bottom: 20px;
+}
+.inputBox input,
+.inputBox textarea {
+    width: 570px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid ;
+    color: rgb(255,255,255);
+    font-size: 16px;
+    outline: none;
+    resize: none;
+
+}
+fieldset{
+    text-align: center;
+    margin:auto 400px;
+    background-color: rgb(36, 36, 76,0.6);
+    border: 0px;
+    padding: 50px;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding:8px 0;
+    margin: 0;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+  color: rgb(255, 255, 255);
+  transform:  translateY(-20px);
+  font-size: 0.9em;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(36, 36, 76,0.9);
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+
+}
+button:hover{
+    background-color: blue;
+    border: none;
+}
