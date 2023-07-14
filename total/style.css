@@ -21,28 +21,38 @@
   initial-value: 0deg;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /*HOME*/
 
 body {
   background: radial-gradient(#0c0c32 55%, #191919 100%);
   background-attachment: fixed;
+  width: 100%;
 }
 
 nav {
   position: fixed;
+  top: 0;
   display: flex;
-  height: 8rem;
+  height: 6rem;
   width: 100vw;
   z-index: 3;
   background: radial-gradient(#0c0c32 55%, #191919 100%);
   background-size: 100vw 100vh;
 }
 
+
 img.wissenaire {
-  position: fixed;
-  left: 5%;
-  height: auto;
-  border-radius: 50px 40px 30px 40px 50px;
+  position: relative;
+  
+  height: 6rem;
+  
 }
 
 button {
@@ -50,7 +60,7 @@ button {
 }
 
 button.menu {
-  position: fixed;
+  
   right: 5%;
   margin: 3.5rem 2rem 1rem 3rem;
   color: #ffffff;
@@ -78,12 +88,15 @@ div.ca {
   display: flex;
   float: left;
   width: 100%;
+  align-items: center;
 }
 
 div.info {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 div.catxt {
@@ -98,9 +111,18 @@ div.wiss {
 }
 
 img.caimg {
-  height: auto;
+  height: fit-content;
   filter: drop-shadow(-5px 5px 5px #00ffe175);
+  
 }
+
+.home{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
 
 button.signup {
   background: linear-gradient(
@@ -111,8 +133,10 @@ button.signup {
   );
   text-align: center;
   position: relative;
-  height: 7rem;
-  font-size: 450%;
+  margin-top: 40px;
+  font-size: 35px;
+  padding: 3px 50px;
+  width: fit-content;
   border-radius: 200px;
   box-shadow: -4px -2px 25px 0px #6ac5f2,
     4px 5px 25px 0px rgba(199, 7, 238, 0.48);
@@ -174,13 +198,13 @@ button.signup:hover {
   font-family: "Exo SemiBold Italic";
   z-index: 2;
   color: #02f4d3;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .card-inner p {
   font-size: large;
   letter-spacing: 0px;
-  font-weight: 800;
+  font-weight: 500;
   color: rgba(253, 253, 253, 0.808);
   font-size: 1.3rem;
   font-family: "acme";
@@ -346,20 +370,20 @@ p.ca {
   text-align: center;
   color: #b4cca7;
   align-items: center;
-  font-weight: 100px;
-  font-size: 4rem;
+  font-weight: 500;
+  font-size: 3rem;
   font-family: "acme";
 }
 .bb {
   color: #b4cca7;
   text-align: center;
-  font-weight: 550;
+  font-weight: 500;
   font-family: "Exo SemiBold Italic";
-  font-size: 25px;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 
-/*iINCENTIVES*/
+/*INCENTIVES*/
 
 .incen-content {
   justify-content: space-around;
@@ -372,7 +396,7 @@ p.ca {
   color: white;
   padding-top: 30px;
   padding-bottom: 50px;
-  font-size: xx-large;
+  font-size: 3rem;
   background: transparent;
   font-family: "Exo SemiBold Italic";
 }
@@ -420,11 +444,11 @@ p.ca {
   transform: translateX(-50%);
   transition: 1s;
   text-align: center;
-  top: 0px;
-  font-weight: bolder;
+  top: 10px;
+  font-weight: bold;
   color: #380000;
   font-family: "acme";
-  letter-spacing: 1px;
+  
 }
 
 #next,
@@ -437,7 +461,7 @@ p.ca {
   border: none;
   width: 35%;
   z-index: 2;
-  font-size: xxx-large;
+  font-size: xx-large;
   font-family: monospace;
   font-weight: bold;
   left: 5vw;
@@ -476,7 +500,9 @@ div.tril {
   justify-items: center;
   align-items: center;
   width: 100%;
-  margin: 1.5% 0% 0% 0%;
+  text-align: center;
+  background-color: #000000;
+  padding-top: 60px;
 }
 
 .headings {
@@ -487,16 +513,17 @@ div.tril {
 }
 
 .information {
-  margin: 1rem 0rem 3rem 0rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 2.25rem;
   color: #c2e4ff;
   font-family: "acme";
+  padding-bottom: 20px;
 }
 
 div#heading {
-  font-size: 2.15rem;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  
 }
 
 a#wissenaire_web{
@@ -504,6 +531,10 @@ a#wissenaire_web{
     justify-content: center;
 }
 
+#links{
+  align-items: center;
+  justify-content: center;
+}
 .triangle {
   margin: 0.7rem;
   width: 0;
@@ -512,10 +543,12 @@ a#wissenaire_web{
   border-bottom: 1rem solid transparent;
   border-right: 1rem solid rgb(28, 247, 255);
 }
-
+/*
 ul.links {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   list-style: none;
   margin-bottom: 50px;
 }
@@ -540,8 +573,33 @@ a.link {
   width: 100%;
   height: 100%;
   justify-content: center;
+}*/
+
+.sc-icons{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+  justify-content: center;
 }
 
+.icon{
+  
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 60%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  column-gap: 25px;
+  align-items: center;
+}
+/*
 span.fa-facebook {
   color: rgb(40, 85, 182);
   font-size: 30px;
@@ -566,4 +624,59 @@ li.link:hover {
   transition: all 700ms;
   opacity: 2;
   transform: scale(1.1);
+}
+*/
+
+.icon:hover{
+  outline-offset: 4px;
+}
+
+.icon i{
+  margin: auto;
+}
+
+.icon:hover i{
+  animation: shake 0.25s;
+}
+
+.icon--instagram:hover{
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover{
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover{
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.icon--facebook:hover{
+  background-color: rgb(40, 85, 182);
+  outline-color: rgb(40, 85, 182);
+}
+
+@keyframes shake{
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  30%{
+    transform: rotate(15deg);
+  }
+  40%{
+    transform: rotate(-15deg);
+  }
 }

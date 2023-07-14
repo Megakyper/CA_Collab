@@ -15,13 +15,13 @@
   }
 
   img.wissenaire {
-    width: 10rem;
+    width: 100px;
   }
 
   ul.navs {
     position: fixed;
-    right: 20%;
-    top: 2rem;
+    right: 18%;
+    
   }
 
   div.ca {
@@ -31,13 +31,13 @@
 
   div#navitems {
     display: block;
-    margin: 2.5% 0% 0% 0%;
+    float: left;
     width: 75%;
-    font-size: 2.4vw;
+    font-size: 25px;
   }
 
   li.nav-item {
-    margin: 2.25rem 3.5%;
+    margin: 2rem 3.5%;
   }
 
   div.info {
@@ -50,10 +50,7 @@
     margin: 3% 5%;
   }
 
-  button.signup{
-    width: 30%;
-    left: 35%;
-  }
+ 
 
   /*responsibilities*/
 
@@ -94,7 +91,7 @@
   }
 
   .item {
-    width: 350px;
+    width: 320px;
     height: 450px;
   }
 
@@ -111,22 +108,22 @@
   }
 
   img.wissenaire {
-    width: 8rem;
-    float: left;
+    width: 100px;
+    left: 10px;
   }
 
   div#navitems {
     display: block;
     width: 68%;
     margin: 2.25rem 4.2%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     float: right;
   }
 
   ul.navs {
     position: fixed;
-    right: 20%;
-    top: 2rem;
+    right: 18%;
+    top: 0.8rem;
   }
 
   li.nav-item {
@@ -144,12 +141,8 @@
     margin: 3% 2%;
   }
 
-  button.signup{
-    width: 40%;
-    left: 30%;
-  }
 
-  /*respnsibilities*/
+  /*responsibilities*/
 
   .row {
     display: flex;
@@ -207,8 +200,10 @@
   div.small {
     display: flex;
     flex-direction: row;
-    flex: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
 
   button.menu {
     border-left: 70%;
@@ -217,16 +212,16 @@
 
   img.wissenaire {
     width: 6rem;
-    float: left;
+    left: 10px;
   }
 
   div#navitems {
     position: fixed;
     background: radial-gradient(#0c0c32 75%, #191919 100%);
     background-size: 99vw 220vh;
-    top: 12.5%;
+    top: 6rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 25px;
   }
 
   ul.navs {
@@ -254,10 +249,7 @@
   }
 
   
-  button.signup{
-    width: 85%;
-    left: 7.5%;
-  }
+  
 
   /*respnsibilities*/
 
@@ -300,8 +292,36 @@
   }
 
   /*contact*/
-
+  /*
   ul.links {
     width: 100%;
+  }*/
+
+  .icon--instagram{
+    background-image: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    border-color: #a02d76;
   }
+  
+  .icon--twitter{
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+  
+  .icon--linkedin{
+    background-color: #0077b5;
+    border-color: #0077b5;
+  }
+  
+  .icon--facebook{
+    background-color: rgb(40, 85, 182);
+    border-color: rgb(40, 85, 182);
+  }
+  
 }
