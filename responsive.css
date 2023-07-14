@@ -210,6 +210,7 @@
     display: block;
   }
 
+  
   img.wissenaire {
     width: 6rem;
     left: 10px;
@@ -251,7 +252,7 @@
   
   
 
-  /*respnsibilities*/
+  /*responsibilities*/
 
   .row {
     display: grid;
