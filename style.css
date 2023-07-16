@@ -1,5 +1,5 @@
-@import url("../responsive.css");
-@import url("../fonts/style.css");
+@import url("./responsive.css");
+@import url("./fonts/style.css");
 
 * {
   padding: 0;

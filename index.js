@@ -112,7 +112,7 @@ function frame() {
         if (h <= 300) {
             d[k].style.transform = 'rotate(0deg) scaleX(' + ((((300 - h)) / 25)) + ')'
         }
-        d[k].style.top = (10 + (((m + k) * 89) / d.length)) + '%';
+        d[k].style.top = (10 + (((m + k) * 90) / d.length)) + '%';
         d[k].style.left = (h / 5) + "%";
         m = 0
         if (k <= d.length / 2)
