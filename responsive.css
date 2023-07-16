@@ -73,7 +73,7 @@
   }
 
   #next,#prev{
-    height: 21rem;
+    height: 35vh;
   }
 
   .card__content {
@@ -196,7 +196,7 @@
 
   button.signup {
     width: 70vw;
-    max-width: 350px;
+    max-width: 500px;
   }
   /*respnsibilities*/
 
@@ -213,17 +213,18 @@
   div.containerg {
     --c: 10deg;
     width: 60vw;
-    height: 39vh;
+    height: 35vh;
     min-height: 320px;
-    max-height: 370px;
+    max-height: 430px;
     max-width: 510px;
     margin-bottom: 5vh;
   }
 
   
   #next,#prev{
-    height: 35vh;
-    min-height: 350px;
+    height: 37vh;
+    min-height: 320px;
+    max-height: 470px;
   }
 
   .card__content {
