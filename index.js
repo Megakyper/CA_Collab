@@ -68,7 +68,7 @@ for (var j = 0; j < navs.length; j++) {
             b[0].classList.remove("fa-xmark");
             b[0].classList.add("fa-bars");
             b[0].classList.remove("zero");
-        }, 300);
+        }, 100);
         cel.classList.add("remove");
         setTimeout(() => {
             cel.classList.remove("show");

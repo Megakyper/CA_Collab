@@ -5,12 +5,6 @@
 /* Styles for desktop view / large screens*/
 @media (min-width: 1024px) {
   /*bg*/
-
-  .ligs {
-    width: 3%;
-    --g: 170%;
-  }
-
   /*home*/
   nav {
     justify-content: space-around;
@@ -57,7 +51,7 @@
 
   /*responsibilities*/
 
-  .row {
+  .rowg {
     display: flex;
   }
 
@@ -117,13 +111,10 @@
 
 /* Media query for tablets/mobiles */
 @media (max-width: 1023px) {
-  .ligs {
-    width: 6%;
-    --g: 130%;
-  }
 
   nav {
     flex-direction: column;
+    min-height: 10vh;
   }
 
   div.small {
@@ -136,10 +127,13 @@
   button.menu {
     border-left: 70%;
     display: block;
+    translate: X -5vw;
   }
 
   img.wissenaire {
-    width: 6rem;
+    height: 10rem;
+    min-height: 10vh;
+    max-height: 11vh;
     left: 10px;
   }
 
@@ -149,7 +143,7 @@
     background-size: 99vw 220vh;
     top: 5.5rem;
     width: 100%;
-    font-size: 25px;
+    font-size: 3vh;
   }
 
   .remove {
@@ -183,16 +177,23 @@
 
   /*respnsibilities*/
 
-  .row {
-    display: grid;
-    justify-items: center;
+  .rowg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
   }
 
   div.containerg {
     --c: 10deg;
-    width: 80%;
-    margin: 5%;
-    height: 20rem;
+    width: 60vw;
+    height: 25vh;
+    min-height: 350px;
+    max-width: 510px;
+    margin-bottom: 5vh;
   }
 
   .card__content {
@@ -201,12 +202,14 @@
   }
 
   .card img {
-    width: 70%;
+    height: 15vh;
+    width: auto;
+    top: 15%;
   }
 
   p.card__description {
     font-size: 1rem;
-    margin-top: 12.5rem;
+    color: rgb(3, 166, 171);
   }
 
   /*incentives*/
@@ -257,7 +260,6 @@
 
   fieldset {
     width: 80%;
-    max-width: 550px;
   }
 
   .inputBox {

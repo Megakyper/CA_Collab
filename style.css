@@ -71,7 +71,7 @@ nav {
   position: fixed;
   top: 0;
   display: flex;
-  height: 6rem;
+  height: 100px;
   width: 100vw;
   z-index: 3;
   background: radial-gradient(#0c0c32 55%, #191919 100%);
@@ -90,15 +90,15 @@ button {
 
 button.menu {
   right: 5%;
-  margin: 3.5rem 2rem 1rem 3rem;
+  margin: 3.5rem 7.5vw 1rem 3rem;
   color: #ffffff;
   background-color: transparent;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .zero {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(12.5vw);
 }
 
 ul.navs {
@@ -295,7 +295,7 @@ button.signup:hover {
   background: #000000;
   width: 95%;
   height: 95%;
-  max-width: 400px;
+  max-width: 500px;
   transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -303,6 +303,7 @@ div.containerg {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: conic-gradient(
     from var(--b),
     white 0deg var(--a),
@@ -312,7 +313,6 @@ div.containerg {
   animation: change 15s ease infinite;
   animation: threed 10s linear infinite;
   transition: --c 0.4s linear, all 1s linear;
-  transform: translateX(50%);
 }
 
 .container:nth-child(even) {
@@ -367,7 +367,6 @@ div.containerg {
 .card img {
   fill: #333;
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 50;
 }
 
 .card :hover {
@@ -410,8 +409,8 @@ div.containerg {
   font-family: "Exo SemiBold Italic";
 }
 
-.row {
-  width: 100%;
+.rowg {
+  width: 100vw;
   justify-content: space-evenly;
 }
 
