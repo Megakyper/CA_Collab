@@ -613,7 +613,7 @@ div.tril {
 }
 
 .headings {
-  font-size: 3rem;
+  font-size: max(3.5vh,3.5vh);
   text-align: center;
   color: white;
   font-family: "Exo SemiBold Italic";
@@ -622,14 +622,14 @@ div.tril {
 .information {
   margin-top: 1rem;
   text-align: center;
-  font-size: 2.25rem;
+  font-size: max(2.5vw,2.5vh);
   color: #c2e4ff;
   font-family: "acme";
   padding-bottom: 20px;
 }
 
 div#heading {
-  font-size: 1.5rem;
+  font-size: max(2vh,2vw);
 }
 
 a#wissenaire_web {
@@ -688,6 +688,7 @@ a.link {
   padding-bottom: 20px;
   display: flex;
   column-gap: 25px;
+  font-size: max(5vh,5vw);
   align-items: center;
   justify-content: center;
 }
