@@ -256,7 +256,7 @@ button.signup:hover {
   margin-bottom: 10px;
   font-family: "acme";
   z-index: 2;
-  color: #02f4d3;
+  color: rgba(253, 253, 253, 1);
   font-size: 3rem;
 }
 
@@ -264,7 +264,7 @@ button.signup:hover {
   font-size: large;
   font-family: "Exo SemiBold Italic";
   font-weight: 500;
-  color: rgba(253, 253, 253, 1);
+  color: #89d2dc;
   font-size: 1.3rem;
   letter-spacing: 0.5px;
   word-spacing: 10px;
