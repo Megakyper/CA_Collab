@@ -78,47 +78,49 @@ for (var j = 0; j < navs.length; j++) {
     };
 }
 
-let lig = document.getElementById('lig');
+let lig = document.getElementById('bg');
 let l;
-for (var h = 0; h < 95; h++) {
+for (var n = 0; n < 50; n++) {
     let g = lig.innerHTML;
-    lig.innerHTML = g + '<div class="ligs"></div>';
+    lig.innerHTML = g + '<div class="pulsev2"></div>';
 }
 
-setInterval(getCursor, 100)
 
-function getCursor() {
-    var w = window.innerWidth;
-    let d = document.getElementsByClassName('ligs');
-    var t = null;
-    if (w >= 1024)
-        t = 20;
+const d = document.getElementsByClassName("pulsev2");
+var m = 0;
+var h = -70;
+h.toFixed(1);
+m.toFixed(1);
+var k;
+setInterval(frame, 1);
 
-    if (w < 1024 && w > 800)
-        t = 15;
-
-    if (w <= 800)
-        t = 10;
-
-    for (let j = 0; j < d.length; j++) {
-        d[j].style.right = (25 + (j * 50) / d.length) + '%';
-        if (j <= ((d.length) / 4)) {
-            d[j].style.animationDelay = ((((d.length / 4) - j) * t) / (d.length)) + 's';
+function frame() {
+    for (k = 0; k < d.length; k++) {
+        if (k <= d.length / 2)
+            h -= ((((d.length / 2) - k) * 100) / (d.length));
+        if (k > d.length / 2)
+            h -= (((k - (d.length / 2)) * 100) / (d.length));
+        d[k].style.background = 'hsla(' + (180 + (((((d.length / 2) - k) * ((d.length / 2) - k)) * 720) / (d.length * d.length))) + ',100%,70%)'
+        if (h == 700) {
+            h = -70;
+            m = 0;
         }
-
-        if (j < ((d.length) / 2) && j > ((d.length) / 4)) {
-            d[j].style.animationDelay = (((j - (d.length / 4)) * ((3 * t) / 4)) / (d.length)) + 's';
-            d[j].style.background = 'linear-gradient(131.5deg, rgb(350,25,25)3%' + (90 - ((((((d.length) / 2) - 1 - j) * 1200) / (d.length)))) + '%, rgb(145, 145, 145) 0% 97% )'
+        if (h > 300) {
+            m = (((h - 300) * (((k - (d.length / 2)) / d.length))) / 10);
+            d[k].style.transform = 'rotate(' + ((m * 900) / (h - 300)) + 'deg) scaleX(' + (((h - 300)) / 20) + ')'
         }
-
-        if (j >= ((d.length) / 2) && j < ((3 * d.length) / 4))
-            d[j].style.animationDelay = (((((3 * d.length) / 4) - j) * ((3 * t) / 4)) / (d.length)) + 's';
-
-        if (j > ((3 * d.length) / 4))
-            d[j].style.animationDelay = (((j - ((3 * d.length) / 4)) * t) / (d.length)) + 's';
-
-        if (j >= ((d.length) / 2))
-            d[j].style.background = 'rgb(350,25,25) '
-
+        if (h <= 300) {
+            d[k].style.transform = 'rotate(0deg) scaleX(' + ((((300 - h)) / 25)) + ')'
+        }
+        d[k].style.top = (10 + (((m + k) * 89) / d.length)) + '%';
+        d[k].style.left = (h / 5) + "%";
+        m = 0
+        if (k <= d.length / 2)
+            h += ((((d.length / 2) - k) * 100) / (d.length));
+        if (k > d.length / 2)
+            h += (((k - (d.length / 2)) * 100) / (d.length));
+        if (k == (d.length - 1) && h != 700) {
+            h+=1;
+        }
     }
 }

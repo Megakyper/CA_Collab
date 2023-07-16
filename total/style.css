@@ -8,44 +8,20 @@
 
 /*bg*/
 
-@property --g {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 50%;
+#bg {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  z-index: -10;
+  background: transparent;
 }
 
-#lig {
+.pulsev2 {
+  width: 2%;
+  height: 0.2%;
+  border-radius: 5%;
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 200%;
-  width: 200%;
-  z-index: -3;
-  filter: blur(1%);
-}
-
-.ligs {
-  height: 10%;
-  position: fixed;
-  animation: down 10s infinite linear ;
-  background-color: rgb(145, 145, 145);
-  transition: all linear;
-  opacity: 0.5;
-  border-radius: 20%;
   transform-origin: bottom center;
-  box-shadow: -4px -2px 25px 0px #6ac5f2,
-    4px 5px 25px 0px rgba(199, 7, 238, 0.48);
-}
-
-@keyframes down {
-  from {
-    top: 0;
-    transform: scaleY(1) scaleX(1);
-  }
-  to {
-    top: var(--g);
-    margin-left: 50px;
-  }
 }
 
 /*properties*/
@@ -442,7 +418,7 @@ div.containerg {
 p.ca {
   width: 100%;
   text-align: center;
-  color:white;
+  color: white;
   align-items: center;
   font-weight: 500;
   font-size: 3rem;
@@ -450,9 +426,9 @@ p.ca {
 }
 
 .bb {
-  color:white;
+  color: white;
   text-align: center;
-  font-weight: 500;;
+  font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 3rem;
   font-family: "acme";
@@ -582,7 +558,7 @@ div.tril {
 .headings {
   font-size: 3rem;
   text-align: center;
-  color:white;
+  color: white;
   font-family: "Exo SemiBold Italic";
 }
 
@@ -674,7 +650,6 @@ a.link {
   align-items: center;
 }
 
-
 .icon--facebook {
   color: rgb(40, 85, 182);
   font-size: 30px;
@@ -702,7 +677,6 @@ li.link:hover {
   opacity: 2;
   transform: scale(1.1);
 }
-
 
 .icon:hover {
   outline-offset: 4px;
