@@ -7,6 +7,7 @@
   /*bg*/
   /*home*/
   nav {
+    height: 100px;
     justify-content: space-around;
   }
 
@@ -44,6 +45,10 @@
     margin: 5% 2.5%;
   }
 
+  div.ca{
+    margin-top: 100px;
+  }
+
   img.caimg {
     width: 50%;
     margin: 3% 5%;
@@ -61,6 +66,10 @@
     height: 21rem;
     max-width: 420px;
     margin: 2% 1% 8% 1%;
+  }
+
+  #next,#prev{
+    height: 21rem;
   }
 
   .card__content {
@@ -161,6 +170,10 @@
   }
 
   div.ca {
+    margin-top: 10vh;
+    justify-content: space-evenly;
+    height: 90vh;
+    align-content: space-evenly;
     flex-direction: column;
     font-size: 3.5rem;
   }
@@ -175,6 +188,9 @@
     margin: 15% 12.5%;
   }
 
+  button.signup {
+    transform: scale(1.5);
+  }
   /*respnsibilities*/
 
   .rowg {
@@ -190,10 +206,17 @@
   div.containerg {
     --c: 10deg;
     width: 60vw;
-    height: 35vh;
-    min-height: 350px;
+    height: 39vh;
+    min-height: 320px;
+    max-height: 370px;
     max-width: 510px;
     margin-bottom: 5vh;
+  }
+
+  
+  #next,#prev{
+    height: 35vh;
+    min-height: 350px;
   }
 
   .card__content {
@@ -217,7 +240,7 @@
   .slider {
     height: 50vh;
     max-height: 100vw;
-    margin-bottom: 6vh;
+    margin-bottom: 9vh;
   }
 
   .item {

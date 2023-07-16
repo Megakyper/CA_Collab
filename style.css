@@ -71,7 +71,6 @@ nav {
   position: fixed;
   top: 0;
   display: flex;
-  height: 100px;
   width: 100vw;
   z-index: 3;
   background: radial-gradient(#0c0c32 55%, #191919 100%);
@@ -96,8 +95,6 @@ button.menu {
   transition: all 0.1s;
   font-size: large;
 }
-
-
 
 .zero {
   opacity: 0;
@@ -125,11 +122,11 @@ a.navs {
 }
 
 div.ca {
-  margin-top: 8rem;
   display: flex;
   float: left;
   width: 100%;
   align-items: center;
+  margin-bottom: 0;
 }
 
 div.info {
@@ -172,10 +169,9 @@ button.signup {
   );
   text-align: center;
   position: relative;
-  margin-top: 40px;
+  margin-top: 5vh;
   font-size: 35px;
   padding: 3px 50px;
-  width: fit-content;
   border-radius: 200px;
   box-shadow: -4px -2px 25px 0px #6ac5f2,
     4px 5px 25px 0px rgba(199, 7, 238, 0.48);
@@ -197,7 +193,7 @@ button.signup:hover {
 
 /*ABOUT*/
 
-#About {
+#about {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -206,7 +202,7 @@ button.signup:hover {
 
 .container2 {
   width: 100%;
-  padding: 200px 15vw;
+  padding: 50px 15vw;
   align-items: center;
 }
 
@@ -236,7 +232,7 @@ button.signup:hover {
   font-family: "acme";
   z-index: 2;
   color: rgba(253, 253, 253, 1);
-  font-size: max(5vh,5vw);
+  font-size: max(3.5vh, 3.5vw);
 }
 
 .card-inner p {
@@ -244,7 +240,7 @@ button.signup:hover {
   font-family: "Exo SemiBold Italic";
   font-weight: 500;
   color: #89d2dc;
-  font-size: 1.3rem;
+  font-size: max(2vh, 2vw);
   letter-spacing: 0.5px;
   word-spacing: 10px;
 }
@@ -423,7 +419,7 @@ p.ca {
   color: white;
   align-items: center;
   font-weight: 500;
-  font-size: max(5vh,5vw);
+  font-size: max(3.5vh, 3.5vw);
   font-family: "Exo SemiBold Italic";
 }
 
@@ -431,7 +427,7 @@ p.ca {
   color: white;
   text-align: center;
   font-weight: 500;
-  font-size: max(2vh,2vw);
+  font-size: max(2vh, 2vw);
   margin-bottom: 3rem;
   font-family: "acme";
 }
@@ -449,7 +445,7 @@ p.ca {
   color: white;
   padding-top: 30px;
   padding-bottom: 50px;
-  font-size: max(5vh,5vw);
+  font-size: max(3.5vh, 3.5vw);
   background: transparent;
   font-family: "Exo SemiBold Italic";
 }
@@ -492,6 +488,7 @@ p.ca {
   position: absolute;
   bottom: 0;
   left: 50%;
+  font-size: xx-large;
   opacity: 5;
   z-index: 2;
   transform: translateX(-50%);
