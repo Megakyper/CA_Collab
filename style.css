@@ -90,7 +90,7 @@ button {
 
 button.menu {
   right: 5%;
-  margin: 5vh 7.5vw 1rem 3rem;
+  margin: 3vh 7.5vw 1rem 3rem;
   color: #ffffff;
   background-color: transparent;
   transition: all 0.1s;
