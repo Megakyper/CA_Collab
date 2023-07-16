@@ -60,7 +60,7 @@
     width: 20%;
     height: 21rem;
     max-width: 420px;
-    margin: 2% 1% 8% 4%;
+    margin: 2% 1% 8% 1%;
   }
 
   .card__content {
@@ -114,7 +114,7 @@
 
   nav {
     flex-direction: column;
-    min-height: 10vh;
+    min-height: 9vh;
   }
 
   div.small {
@@ -131,9 +131,9 @@
   }
 
   img.wissenaire {
-    height: 10rem;
-    min-height: 10vh;
-    max-height: 11vh;
+    height: 7rem;
+    min-height: 7vh;
+    max-height: 8vh;
     left: 10px;
   }
 
@@ -141,13 +141,13 @@
     position: fixed;
     background: radial-gradient(#0c0c32 75%, #191919 100%);
     background-size: 99vw 220vh;
-    top: 5.5rem;
+    top: 9vh;
     width: 100%;
-    font-size: 3vh;
+    font-size: 2vh;
   }
 
   .remove {
-    transform: translateY(-125px) scaleY(0);
+    transform: translateY(-75px) scaleY(0);
     opacity: 0;
   }
 
@@ -190,7 +190,7 @@
   div.containerg {
     --c: 10deg;
     width: 60vw;
-    height: 25vh;
+    height: 35vh;
     min-height: 350px;
     max-width: 510px;
     margin-bottom: 5vh;
@@ -202,25 +202,30 @@
   }
 
   .card img {
-    height: 15vh;
+    height: 10vh;
     width: auto;
-    top: 15%;
+    translate: Y 50vw;
   }
 
   p.card__description {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: rgb(3, 166, 171);
   }
 
   /*incentives*/
 
   .slider {
-    height: 450px;
+    height: 50vh;
+    max-height: 100vw;
+    margin-bottom: 6vh;
   }
 
   .item {
-    width: 300px;
-    height: 400px;
+    width: 70vw;
+    height: 45vh;
+    min-height: 350px;
+    max-width: 510px;
+    background-size: cover;
   }
 
   /*contact*/
