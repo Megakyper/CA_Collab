@@ -72,9 +72,6 @@
     margin: 2% 1% 8% 1%;
   }
 
-  #next,#prev{
-    height: 35vh;
-  }
 
   .card__content {
     transform: rotateX(-90deg);
@@ -101,6 +98,10 @@
 
   .item {
     width: 320px;
+    height: 450px;
+  }
+  
+  #next,#prev{
     height: 450px;
   }
 
@@ -188,7 +189,7 @@
 
   nav {
     flex-direction: column;
-    min-height: 9vh;
+    height: 9vh;
   }
 
   span.heading{
@@ -219,7 +220,7 @@
     position: fixed;
     background: radial-gradient(#0c0c32 75%, #191919 100%);
     background-size: 99vw 220vh;
-    top: 9vh;
+    top: 8.5vh;
     width: 100%;
     font-size: 2vh;
   }
@@ -239,11 +240,9 @@
   }
 
   div.ca {
-    margin-top: 10vh;
+    margin-top:10vh;
     justify-content: space-evenly;
-    height: 85vh;
     flex-direction: column;
-    font-size: 3.5rem;
   }
 
   div.info {
@@ -253,13 +252,15 @@
 
   img.caimg {
     width: 80%;
-    margin: 15% 12.5%;
+    margin: 0% 12.5%;
   }
 
   button.signup {
     width: 70vw;
     max-width: 500px;
+    margin:5vh 0vw ;
   }
+
   /*respnsibilities*/
 
   .rowg {
@@ -274,10 +275,9 @@
 
   div.containerg {
     --c: 10deg;
-    width: 60vw;
+    width: max(50vw,200px);
     height: 35vh;
-    min-height: 320px;
-    max-height: 430px;
+    min-height: 270px;
     max-width: 510px;
     margin-bottom: 5vh;
   }
@@ -308,24 +308,24 @@
 
   .slider {
     height: 50vh;
-    max-height: 100vw;
+    min-height: 390px;
     margin-bottom: 9vh;
   }
 
   .item {
-    width: 70vw;
+    width: min(70vw,300px);
     height: 45vh;
     min-height: 350px;
     max-width: 510px;
     background-size: cover;
   }
+  
+  #next,#prev{
+    height: 45vh;
+    min-height: 350px;
+  }
 
   /*contact*/
-  /*
-  ul.links {
-    width: 100%;
-  }*/
-
   .icon--instagram {
     background-image: radial-gradient(
       circle at 30% 107%,
