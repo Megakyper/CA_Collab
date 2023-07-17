@@ -252,8 +252,8 @@
 
   div.containerg {
     --c: 10deg;
-    width: 60vw;
-    height: 35vh;
+    width: min(60vh,250px);
+    height: max(250px,30vh);
     min-height: 320px;
     max-height: 430px;
     max-width: 510px;

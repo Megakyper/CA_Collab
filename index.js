@@ -42,22 +42,23 @@ prev.onclick = function () {
 let navs = document.getElementsByClassName("navs");
 let cel = document.getElementById("navitems");
 let b = document.getElementsByClassName("own");
+let menu = document.getElementsByClassName("menu");
 
-b[0].onclick = function () {
+menu[0].onclick = function () {
     if (b[0].classList.contains("bars")) {
         b[0].classList.add("zero");
         setTimeout(() => {
             b[0].classList.remove("bars");
             b[0].classList.add("xmark");
             b[0].classList.remove("zero");
-        }, 300);
+        }, 100);
     } else {
         b[0].classList.add("zero");
         setTimeout(() => {
             b[0].classList.remove("xmark");
             b[0].classList.add("bars");
             b[0].classList.remove("zero");
-        }, 300);
+        }, 100);
     }
 };
 
@@ -120,7 +121,7 @@ function frame() {
         if (k > d.length / 2)
             h += (((k - (d.length / 2)) * 100) / (d.length));
         if (k == (d.length - 1) && h != 700) {
-            h+=1;
+            h += 1;
         }
     }
 }
