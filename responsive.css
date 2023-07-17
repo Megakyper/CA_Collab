@@ -276,17 +276,10 @@
   div.containerg {
     --c: 10deg;
     width: max(50vw,200px);
-    height: 35vh;
+    height: 33vh;
     min-height: 270px;
-    max-width: 510px;
-    margin-bottom: 5vh;
-  }
-
-  
-  #next,#prev{
-    height: 37vh;
-    min-height: 320px;
-    max-height: 470px;
+    max-width: 350px;
+    margin:4vh 0;
   }
 
   .card__content {
@@ -312,17 +305,21 @@
     margin-bottom: 9vh;
   }
 
+  @property --w{
+    syntax: "<length>";
+    inherits: false;
+    initial-value: min(50vw,40vh);
+  }
+
   .item {
-    width: min(70vw,300px);
-    height: 45vh;
-    min-height: 350px;
-    max-width: 510px;
+    width: calc(var(--w));
+    height: calc(1.5*var(--w));
     background-size: cover;
   }
-  
-  #next,#prev{
-    height: 45vh;
-    min-height: 350px;
+
+  #next,
+  #prev {
+    height: calc(1.5*var(--w));
   }
 
   /*contact*/
