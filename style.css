@@ -229,7 +229,7 @@ button.signup {
   text-align: center;
   position: relative;
   margin-top: 5vh;
-  font-size: max(3vw, 5vh);
+  font-size: max(3vw, 4vh);
   padding: 3px 50px;
   border-radius: 200px;
   box-shadow: -4px -2px 25px 0px #6ac5f2,
