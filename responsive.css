@@ -275,11 +275,10 @@
 
   div.containerg {
     --c: 10deg;
-    width: max(50vw,200px);
-    height: 33vh;
-    min-height: 270px;
-    max-width: 350px;
-    margin:4vh 0;
+    aspect-ratio: 10/12;
+    height: calc(1.5 * var(--w));
+    max-width: 60vw;
+    margin: 4vh 0;
   }
 
   .card__content {
@@ -300,28 +299,27 @@
   /*incentives*/
 
   .slider {
-    height: 50vh;
+    height: calc(1.6 * var(--w));
     min-height: 390px;
-    margin-bottom: 9vh;
+    margin-bottom: 5vh;
   }
 
-  @property --w{
+  @property --w {
     syntax: "<length>";
     inherits: false;
-    initial-value: min(50vw,40vh);
+    initial-value: min(50vw, 40vh);
   }
 
   .item {
-    width: calc(var(--w));
-    height: calc(1.5*var(--w));
+    aspect-ratio: 10/15;
+    height: calc(1.6 * var(--w));
     background-size: cover;
   }
 
   #next,
   #prev {
-    height: calc(1.5*var(--w));
+    height: calc(1.6 * var(--w));
   }
-
   /*contact*/
   .icon--instagram {
     background-image: radial-gradient(
@@ -358,6 +356,7 @@
 
   fieldset {
     width: 80%;
+    min-height: 90vh;
   }
 
   .inputBox {
