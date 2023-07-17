@@ -108,7 +108,7 @@ function frame() {
         }
         if (h > 300) {
             m = (((h - 300) * (((k - (d.length / 2)) / d.length))) / 10);
-            d[k].style.transform = 'rotate(' + ((m * 900) / (h - 300)) + 'deg) scaleX(' + (((h - 300)) / 20) + ')'
+            d[k].style.transform = 'rotate(' + ((m * 1200) / (h - 300)) + 'deg) scaleX(' + (((h - 300)) / 20) + ')'
         }
         if (h <= 300) {
             d[k].style.transform = 'rotate(0deg) scaleX(' + ((((300 - h)) / 25)) + ')'
