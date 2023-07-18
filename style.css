@@ -220,9 +220,8 @@ img.caimg {
 button.signup {
   background: linear-gradient(
     135deg,
-    rgb(255, 60, 0) calc(var(--a) / 5),
-    rgb(255, 251, 0) var(--a),
-    rgb(115, 255, 0) 100%
+    rgba( 0,205, 201) var(--a),
+    rgba(115,  0,255) 100%
   );
   text-align: center;
   position: relative;
@@ -817,7 +816,7 @@ li.link:hover {
     font-size: max(6.5vh, 5.5vw);
   }
   button.signup {
-    font-size: max(3.5vw, 8vh);
+    font-size: max(3.5vw, 5vh);
   }
   .card-inner h1 {
     font-size: max(4.5vh, 4.5vw);
@@ -826,7 +825,7 @@ li.link:hover {
     font-size: max(2vh, 2vw);
   }
   .card__title {
-    font-size: max(4.5vh, 4.5vw);
+    font-size: max(4vh, 3vw);
   }
   .card__description {
     font-size: max(1.7vh, 1.6vw);
