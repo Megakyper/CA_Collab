@@ -375,9 +375,9 @@ div.containerg {
 @keyframes threed {
   0%,
   100% {
-    transform: perspective(750px) rotate3d(1, 1, 0, var(--c)) translateZ(70px);
+    transform: perspective(750px) translateZ(70px);
   }
-
+/*
   12.5% {
     transform: perspective(750px) rotate3d(0, 1, 0, var(--c)) translateZ(70px);
   }
@@ -405,7 +405,7 @@ div.containerg {
   87.5% {
     transform: perspective(750px) rotate3d(1, 0, 0, var(--c)) translateZ(70px);
   }
-
+*/
   100% {
     --b: -360deg;
   }
